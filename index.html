@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(21, 109, 180);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        main {
+            margin: 25px;
+            background-color: rgba(255, 255, 255, 0.637);
+            position: absolute;
+            border-radius: 10px;
+            padding: 0px 15px 15px;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+
+        div#usuario {
+            display: flex;
+            justify-content: center;
+        }
+
+        label {
+            font-size: 1.3em;
+        }
+
+        input[type='text'] {
+            width: 200px;
+            padding: 5px;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Qual seu nome?</h1>
+        <div id="usuario">
+            <input type="text" name="n" id="nome">
+            <button id="verificar">Verificar</button>
+        </div>
+        <p id="msg"></p>
+        <img id="ft" src="" alt="">
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
